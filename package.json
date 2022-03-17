@@ -1,0 +1,34 @@
+{
+  "name": "delightful-structure",
+  "description": "A structure that is delightfully simple and beautiful.",
+  "private": true,
+  "version": "0.0.0",
+  "repository": "https://github.com/JHSeo-git/delightful-structure.git",
+  "author": "JHSeo <qnfqnfqnf@gmail.com>",
+  "license": "MIT",
+  "source": "./src/index.tsx",
+  "main": "./dist/index.html",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "dev": "vite --port 4000",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "format": "prettier --write 'src/**/*.{ts,tsx}'"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "@types/react": "^17.0.40",
+    "@types/react-dom": "^17.0.13",
+    "@vitejs/plugin-react": "^1.2.0",
+    "prettier": "^2.6.0",
+    "typescript": "^4.6.2",
+    "vite": "^2.8.6"
+  }
+}

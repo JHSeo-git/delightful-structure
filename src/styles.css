@@ -1,0 +1,42 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.app {
+  max-width: 40rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+code {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  font-size: 0.9rem;
+  background-color: #f6f8fa;
+  border-radius: 0.3rem;
+  padding: 0.15rem 0.5rem;
+  white-space: nowrap;
+}
+
+button {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.25rem 1rem;
+  margin: 0 0.5rem;
+  background-color: transparent;
+  cursor: pointer;
+}
