@@ -10,10 +10,13 @@ export const welcomeWidgetMessage = (widgetType: WidgetType): string => {
   switch (widgetType) {
     case 'text':
       widget = 'text';
+      break;
     case 'image':
       widget = 'image';
+      break;
     case 'video':
       widget = 'video';
+      break;
     case 'audio':
       widget = 'audio';
   }

@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom';
+
 /**
  * An example of a simpler
  * React component
@@ -11,6 +13,10 @@ function Header({ title }: HeaderProps) {
   return (
     <header>
       <h1>{title}</h1>
+      <nav>
+        <NavLink to="/">Basic Example</NavLink>
+        <NavLink to="/file-viewer">Fileviewer Example</NavLink>
+      </nav>
     </header>
   );
 }

@@ -14,7 +14,26 @@ body {
   background-color: whitesmoke;
 }
 
-.app {
+header {
+  padding: 0.5rem 1rem;
+}
+header nav {
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+a.active {
+  color: purple;
+}
+
+main {
   max-width: 40rem;
   margin: 0 auto;
   margin-top: 2rem;
@@ -39,4 +58,86 @@ button {
   margin: 0 0.5rem;
   background-color: transparent;
   cursor: pointer;
+}
+
+.sidebar {
+  --row-height: 1.75rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  overflow: auto;
+  padding: 12px 16px 12px 0px;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e5e5;
+}
+
+.button-directory {
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: var(--row-height);
+  color: inherit;
+}
+
+.button-file {
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: var(--row-height);
+  color: var(--color);
+  font-weight: var(--weight);
+}
+
+.icon-wrapper svg {
+  display: block;
+}
+
+.icon-wrapper.expanded {
+  transform: rotate(90deg);
+}
+
+.icon-wrapper2 {
+  transform: translateX(-2px);
+}
+
+.file-viewer-wrapper {
+  display: flex;
+  gap: 8px;
+}
+
+.files {
+  padding-left: calc(16px + 4px);
+  height: 0px;
+}
+
+.file-content-wrapper {
+  flex: 1;
+}
+
+.file-content {
+  background: #f6f8fa;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 16px;
+  overflow: auto;
+  min-height: 420px;
+}
+
+.file-content-code {
+  font-size: 0.875rem;
+  color: black;
+}
+
+.expander {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: var(--row-height);
+  border-radius: 1000px;
+  background: white;
+  opacity: var(--opacity, 0);
+  transition: opacity 200ms;
 }
